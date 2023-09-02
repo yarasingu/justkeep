@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#calculator {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Increase padding for larger calculator */
+    width: 300px; /* Adjust the width of the calculator */
+    margin: 0 auto; /* Center the calculator horizontally */
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    transition: background-color 0.2s ease; /* Add smooth transition on hover */
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+.number, .operator, .equals, .decimal, .clear, .history {
+    color: #333;
+}
+
+#history {
+    margin-top: 20px;
+    display: none; /* Hide the history initially */
+}
+
+#history h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+#history-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
